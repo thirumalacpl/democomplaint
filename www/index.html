@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>nativeDroid II - jQueryMobile Template</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="vendor/waves/waves.min.css" />
+		<link rel="stylesheet" href="vendor/wow/animate.css" />
+		<link rel="stylesheet" href="css/nativedroid2.css" />
+
+		<meta name="mobile-web-app-capable" content="yes">
+	 	<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<style>
+	
+	.error {
+    color:red;
+}
+</style>
+
+
+<script src="js/jquery.mobile.min.js"></script>
+   <script src="js/jquery-1.11.3.min.js"></script>
+   	<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="vendor/waves/waves.min.js"></script>
+		<script src="vendor/wow/wow.min.js"></script>
+		<script src="js/nativedroid2.js"></script>
+		<script src="nd2settings.js"></script>
+	</head>
+	<body >
+
+<!-- 		<div data-role="page">
+
+			<nd2-include data-src="examples/fragments/panel.left.html"></nd2-include>
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
+				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Page Title</h1>
+			</div>
+
+			<div role="main" class="ui-content" data-inset="false">
+				<p>(home)</p>
+			</div>
+
+		</div> -->
+
+
+<!--///////////////////////////SPLASH SCREEN START////////////////////////////////////////////-->
+		<!--<div data-role="page" class="bg" id="pageone">
+
+
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+	
+
+			<div role="main" class="ui-content cent" data-inset="false">
+				<p><img  src="img/logo.png"></p>
+			</div>
+
+		</div>-->
+<!--///////////////////////////SPLASH SCREEN START////////////////////////////////////////////-->
+
+
+
+
+
+<!--///////////////////////////1st SCREEN START////////////////////////////////////////////-->
+		<div data-role="page" class="bg" id="pagetwo">
+
+
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+	
+
+			<div role="main" class="ui-content centcontent" data-inset="false">
+				<p><img src="img/logo.png"></p>
+
+				<p class="fnt tb">Do you have a reservation to lodge a complaint due to fear or social embrasement our decorated ex-police officers to help you</p>
+
+
+				<a href="#pagethree1" class="txtdec"><p><span class="btn-bor"> PROCEED <i class="zmdi zmdi-arrow-forward zmd-fw pad-left"></i></span></p></a>
+
+
+			</div>
+
+		</div>
+<!--///////////////////////////1st SCREEN END////////////////////////////////////////////-->
+
+
+
+<!--///////////////////////////2st SCREEN START////////////////////////////////////////////-->
+<div data-role="page" id="pagethree1" >
+<script type="text/javascript" src="js/user_complaint_details.js"></script>
+<script type="text/javascript" src="cordova.js"></script>			<!-- <nd2-include data-src="examples/fragments/panel.left.html"></nd2-include> -->
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown bg-2 top-bottom" data-wow-delay="0.2s">
+				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn top-bottom" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
+				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn top-bottom" data-wow-delay='0.8s'><i class="zmdi zmdi-arrow-back zmd-fw"></i></a>
+				<h1 class="wow fadeIn cen" data-wow-delay='0.4s'>Enter Your Details</h1>
+			</div>
+
+			<div role="main" class="ui-content" data-inset="false">
+	<form method="POST" name="registration" id="callAjaxForm">
+            <div style="clear:both;">&nbsp;</div>
+						<div class="box">
+
+						<label class="bot" for="name2b">User Name:</label>
+                        <input type="text" name="uname" id="uname" value="" data-clear-btn="true" placeholder="Enter User Name...">
+
+                        <div style="clear:both;">&nbsp;</div>
+
+                       <label class="bot" for="name2b">Phone Number:</label>
+                        <input type="text" name="phone" id="phone" value="" data-clear-btn="true" placeholder="Type your Phone Number..."> 
+                        <div style="clear:both;">&nbsp;</div>
+
+                       
+                
+                        <label class="bot" for="inputEmail">Input type email:</label>
+                        <input type="email" name="mail" id="mail" value="" data-clear-btn="true" placeholder="">
+
+                        <label class="bot" for="inputEmail">Enter Suburb:</label>
+                        <input type="email" name="suburb" id="suburb" value="" data-clear-btn="true" placeholder="">
+
+                       
+
+                        <div class="ui-grid-solo">
+      <div class="ui-block-a">
+        <label class="bot" for="inputcity" for="select-choice-1b" class="select">Select City</label>
+                        
+<select name="select-choice-1j"   class="cities" name="cty" id="cty" >
+          <option value="">Select City</option>
+        </select>
+
+
+
+                        <!--<select name="select-choice-1j" id="select-choice-1bj"  class="cty" data-native-menu="false">
+                        
+                        </select>-->
+      </div>
+
+      
+    </div>
+
+      <div class="ui-grid-solo">
+      <div class="ui-block-a">
+        <label class="bot" for="inputcity" for="select-choice-1b" class="select">Select Nature Of Your Complaint</label>
+
+
+        <select name="select-choice-1j" class="nature" name="ntre" id="ntre" >
+          <option value="">Select Nature Of Your Complaint</option>
+        </select>
+                        <!--<select name="select-choice-1" id="select-choice-1b" data-native-menu="false">
+                            <option value="javascript">JavaScript</option>
+                            <option value="css">CSS</option>
+                            <option value="html">HTML</option>
+                            <option value="csharp">C#</option>
+                            <option value="java">Java</option>
+                        </select>-->
+      </div>
+    </div>
+
+<div data-role="fieldcontain">
+      <fieldset class="ui-grid-a">
+                        <legend>Do You Want To:</legend>
+                        <div class="ui-block-a">
+              <input type="radio" name="lodg" class="lod" id="radio-choice-1" value="Lodge a complaint" checked="checked" />
+                             <label for="radio-choice-1">Lodge a complaint</label>
+                             
+                        </div>
+                        <div class="ui-block-b">
+                                
+                             <input type="radio" class="lod" name="lodg" id="radio-choice-3" value="Follow up on complaint"  />
+                             <label for="radio-choice-3">Follow up on complaint</label>
+                
+                        </div>                    
+                    </fieldset>
+                    </div>
+
+                        
+                      
+                        <label class="bot" for="textarea2b">Textarea:</label>
+	                    <textarea cols="40" rows="8" name="description" id="description" placeholder=""></textarea>
+                      
+                        
+						
+
+  
+
+
+
+
+                        </div>
+
+
+</form>
+			</div><!--main content-->
+<div data-role="footer" data-position="fixed" style="text-align:center;">
+	<button class="ui-btn ui-btn-raised clr-default" id="subinsert">Get Started</button>
+
+
+</div>
+
+
+
+		</div><!--page-->
+<!--///////////////////////////2st SCREEN END////////////////////////////////////////////-->
+
+		
+
+
+
+		<!--///////////////////////////3rd SCREEN start////////////////////////////////////////////-->
+
+<div data-role="page" id="pagefour"  class="bg-rupee-page">
+
+			<!-- <nd2-include data-src="examples/fragments/panel.left.html"></nd2-include> -->
+
+			<div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+				<nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include>
+			</div>
+
+			<div data-role="header" data-position="fixed" class="wow fadeInDown bg-2 top-bottom" data-wow-delay="0.2s">
+				<a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn top-bottom" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
+				<a href="#pagethree" class="ui-btn ui-btn-left wow fadeIn top-bottom" data-wow-delay='0.8s'><i class="zmdi zmdi-arrow-back zmd-fw"></i></a>
+				<h1 class="wow fadeIn cen" data-wow-delay='0.4s'>Make Payment</h1>
+			</div>
+
+			<div role="main" class="ui-content" data-inset="false">
+	
+            <div style="clear:both;    height: 60px;">&nbsp;</div>
+					<div class="col-xs-12">
+						<div class="box">
+
+			
+  <div class="padzbot">Do you require our service</div>
+
+
+<!--////////////////////////////Radio Button STARTS///////////////////////////-->
+
+   <div class="ui-grid-a" style="margin-left: 40px;margin-right: 40px;">
+
+
+      <div class="ui-block-a" >
+       
+       <fieldset data-role="controlgroup">
+       <legend></legend>
+       <input type="radio" name="radio-choice-2" id="test1" value="choice-3" >
+       <label style="background-color: #EFFFFF;" class="text-lower radio-text" for="test1">One time</label>
+       </div>
+
+      <div class="ui-block-b">
+
+       <legend class="lab-rad"></legend>
+       <input  type="radio" name="radio-choice-2" id="radio-choice-4b" value="choice-4">
+       <label style="background-color: #EFFFFF;" class="text-lower radio-text" for="radio-choice-4b">Continues assistance</label>
+       </fieldset>
+      </div>
+
+    </div> 
+ 
+
+
+
+
+
+
+
+<!--////////////////////////////Radio Button ENDS///////////////////////////-->
+
+
+
+
+
+
+						</div>
+						</div>
+
+
+<div style="clear:both;">&nbsp;</div>
+
+
+
+
+
+<div class="make-par">Your charges for one time assistance from us to lodge a complaint will be</div>
+<div style="clear:both;">&nbsp;</div>
+<div class="make-rs"><span >&#8377;</span> 250 </div>
+
+
+
+
+
+
+
+
+
+			</div><!--main content-->
+<div data-role="footer" data-position="fixed" class="footer-bg" style="text-align:center;">
+	<a href="#pagefive" class="ui-btn ui-btn-raised clr-default footerfixed ">Pay Now<i style="padding-left: 10px;" class="zmdi zmdi-arrow-forward zmd-fw"></i></a>
+</div>
+
+
+
+		</div><!--page-->
+<!--///////////////////////////3rd SCREEN END////////////////////////////////////////////-->
+
+
+	</body>
+</html>
